@@ -9,7 +9,6 @@
                 "-g",
                 "-std=c++17",
                 "${fileDirname}/*.cpp",
-                //"${fileDirname}/${fileBasename}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
