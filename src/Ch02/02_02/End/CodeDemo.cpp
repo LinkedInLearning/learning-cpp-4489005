@@ -4,8 +4,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 int a, b = 5; // single line comment
 
 /* Multi
@@ -16,16 +14,16 @@ int main(){
     bool my_flag;
     a = 7;
     my_flag = false;
-    cout << "a = " << a << endl;
-    cout << "b = " << b << endl;
-    cout << "flag = " << my_flag << endl;
+    std::cout << "a = " << a << std::endl;
+    std::cout << "b = " << b << std::endl;
+    std::cout << "flag = " << my_flag << std::endl;
     my_flag = true;
-    cout << "flag = " << my_flag << endl;
-    cout << "a+b = " << a+b << endl;
-    cout << "b-a = " << b-a << endl;
+    std::cout << "flag = " << my_flag << std::endl;
+    std::cout << "a+b = " << a+b << std::endl;
+    std::cout << "b-a = " << b-a << std::endl;
     unsigned int positive;
     positive = b - a;
-    cout << "b-a (unsigned) = " << positive << endl;
+    std::cout << "b-a (unsigned) = " << positive << std::endl;
     return (0);
 }
 
