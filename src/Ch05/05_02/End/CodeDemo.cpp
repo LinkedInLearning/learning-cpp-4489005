@@ -1,5 +1,5 @@
 // Learning C++ 
-// Exercise 05_03
+// Exercise 05_02
 // Function Parameters, by Eduardo Corpeño 
 
 #include <iostream>

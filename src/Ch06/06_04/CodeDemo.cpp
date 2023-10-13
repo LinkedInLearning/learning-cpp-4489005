@@ -10,20 +10,21 @@
 using namespace std;
 
 void initialize();
-void initialize(ifstream&);
+void initialize(StudentRecords&, std::ifstream&);
 
-StudentRecords SR;
-int id;
-ifstream inFile;
-ofstream outFile;
 
 int main(){
-	initialize(inFile);       // initialize();
+	StudentRecords SR;
+	int id;
+	ifstream inFile;
+	ofstream outFile;
+
+	initialize(SR, inFile);   // initialize(SR);
 	SR.report_file(outFile);  // SR.report_card(1,std::cout);
 	return (0);
 }
 
-void initialize(ifstream& inFile){
+void initialize(StudentRecords& srec, ifstream& inFile){
 	string str, name;
 	int sid, cid;
 	unsigned char credits;
@@ -38,7 +39,7 @@ void initialize(ifstream& inFile){
 			getline(inFile, str);
 			sid = stoi(str);
 			getline(inFile, name);
-			SR.add_student(sid, name);
+			srec.add_student(sid, name);
 			count++;
 		}
 		inFile.close();
@@ -56,7 +57,7 @@ void initialize(ifstream& inFile){
 			getline(inFile, name);
 			getline(inFile, str);
 			credits = stoi(str);
-			SR.add_course(cid, name, credits);
+			srec.add_course(cid, name, credits);
 			count++;
 		}
 		inFile.close();
@@ -75,7 +76,7 @@ void initialize(ifstream& inFile){
 			cid = stoi(str);
 			getline(inFile, str);
 			grade = str[0];
-			SR.add_grade(sid, cid, grade);
+			srec.add_grade(sid, cid, grade);
 			count++;
 		}
 		inFile.close();
@@ -83,19 +84,19 @@ void initialize(ifstream& inFile){
 	}
 }
 
-void initialize(){
-	SR.add_student(1, "George P. Burdell");
-	SR.add_student(2,"Nancy Rhodes");
+void initialize(StudentRecords& srec){
+	srec.add_student(1, "George P. Burdell");
+	srec.add_student(2, "Nancy Rhodes");
 
-	SR.add_course(1, "Algebra", 5);
-	SR.add_course(2, "Physics", 4);
-	SR.add_course(3, "English", 3);
-	SR.add_course(4,"Economics",4);
+	srec.add_course(1, "Algebra", 5);
+	srec.add_course(2, "Physics", 4);
+	srec.add_course(3, "English", 3);
+	srec.add_course(4, "Economics", 4);
 
-	SR.add_grade(1, 1, 'B');
-	SR.add_grade(1, 2, 'A');
-	SR.add_grade(1, 3, 'C');
-	SR.add_grade(2, 1, 'A');
-	SR.add_grade(2, 2, 'A'); 
-	SR.add_grade(2, 4, 'B');
+	srec.add_grade(1, 1, 'B');
+	srec.add_grade(1, 2, 'A');
+	srec.add_grade(1, 3, 'C');
+	srec.add_grade(2, 1, 'A'); 
+	srec.add_grade(2, 2, 'A');
+	srec.add_grade(2, 4, 'B');
 }

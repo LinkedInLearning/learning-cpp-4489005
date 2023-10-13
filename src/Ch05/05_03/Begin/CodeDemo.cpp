@@ -1,5 +1,5 @@
 // Learning C++ 
-// Exercise 05_02
+// Exercise 05_03
 // Using Functions, by Eduardo Corpeño 
 
 #include <iostream>
