@@ -1,15 +1,15 @@
 // Learning C++ 
-// Exercise 06_01
-// Opening a text file for reading, by Eduardo Corpeño 
+// Exercise 06_02
+// Opening a text file for writing, by Eduardo Corpeño 
 
 #include <iostream>
 #include <string>
 #include <fstream>
 
-ofstream outFile;
-float a = 4.333f, b = 5.302f;
-
 int main(){
+    std::ofstream outFile;
+    float a = 4.333f, b = 5.302f;
+
     outFile.open("calculations.txt");
     if (outFile.fail())
         std::cout << std::endl << "Couldn't open the file!" << std::endl;

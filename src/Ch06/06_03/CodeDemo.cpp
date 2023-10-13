@@ -6,16 +6,17 @@
 #include <vector>
 #include "records.h"
 
+StudentRecords SR;
+
 void initialize();
 
-StudentRecords SR;
-int id;
-
 int main(){
+	int id;
+	
 	initialize();
 
 	std::cout << "Enter a student ID: ";
-	cin >> id;
+	std::cin >> id;
 
 	SR.report_card(id);
 	
@@ -24,12 +25,12 @@ int main(){
 
 void initialize(){
 	SR.add_student(1, "George P. Burdell");
-	SR.add_student(2,"Nancy Rhodes");
+	SR.add_student(2, "Nancy Rhodes");
 
 	SR.add_course(1, "Algebra", 5);
 	SR.add_course(2, "Physics", 4);
 	SR.add_course(3, "English", 3);
-	SR.add_course(4,"Economics",4);
+	SR.add_course(4, "Economics",4);
 
 	SR.add_grade(1, 1, 'B');
 	SR.add_grade(1, 2, 'A');

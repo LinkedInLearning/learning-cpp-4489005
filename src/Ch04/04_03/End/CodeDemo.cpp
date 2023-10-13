@@ -5,9 +5,9 @@
 #include <iostream>
 #include <vector>
 
-vector<int> numbers = {12,25,31,47,58};
-
 int main(){
+    std::vector<int> numbers = {12,25,31,47,58};
+
     auto ptr = numbers.begin();
     
     while (ptr != numbers.end()){

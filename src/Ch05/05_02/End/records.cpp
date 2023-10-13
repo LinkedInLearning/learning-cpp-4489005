@@ -1,17 +1,17 @@
 #include "records.h"
 
-Student::Student(int the_id, string the_name){
+Student::Student(int the_id, std::string the_name){
 	id = the_id;
 	name = the_name;
 }
 int Student::get_id(){
 	return id;
 }
-string Student::get_name(){
+std::string Student::get_name(){
 	return name;
 }
 
-Course::Course(int the_id, string the_name, unsigned char the_credits){
+Course::Course(int the_id, std::string the_name, unsigned char the_credits){
 	id = the_id;
 	name = the_name;
 	credits = the_credits;
@@ -19,7 +19,7 @@ Course::Course(int the_id, string the_name, unsigned char the_credits){
 int Course::get_id(){
 	return id;
 }
-string Course::get_name(){
+std::string Course::get_name(){
 	return name;
 }
 int Course::get_credits(){
@@ -42,11 +42,11 @@ char Grade::get_grade(){
 	return grade;
 }
 
-void StudentRecords::add_student(int sid, string sname){
+void StudentRecords::add_student(int sid, std::string sname){
 	students.push_back(Student(sid, sname));
 }
 
-void StudentRecords::add_course(int cid, string cname, unsigned char ccredits){
+void StudentRecords::add_course(int cid, std::string cname, unsigned char ccredits){
 	courses.push_back(Course(cid, cname, ccredits));
 }
 
@@ -71,7 +71,7 @@ float StudentRecords::get_num_grade(char letter){
 	return num_grd;
 }
 
-string StudentRecords::get_student_name(int sid){
+std::string StudentRecords::get_student_name(int sid){
 	int i = 0;
 	while (i < students.size() && students[i].get_id() != sid)
 		i++;

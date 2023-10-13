@@ -7,7 +7,7 @@
 #include <string>
 #include "cow.h"
 
-vector<int> primes;
+std::vector<int> primes;
 
 int main(){
     primes.push_back(2);
@@ -21,7 +21,7 @@ int main(){
     std::cout << "The element at index 2 is " << primes[2] << std::endl;
     std::cout << std::endl;
 
-    vector<cow> cattle;
+    std::vector<cow> cattle;
     cattle.push_back(cow("Betty", 6, meat));
     cattle.push_back(cow("Libby", 4, hide));
     cattle.push_back(cow("Trudy", 5, pet));

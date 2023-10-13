@@ -5,10 +5,10 @@
 #include <iostream>
 #include <vector>
 
-vector<int> numbers = {12,25,31,47,58};
-
 int main(){
-    vector<int>::iterator ptr = numbers.begin();
+    std::vector<int> numbers = {12,25,31,47,58};
+    
+    std::vector<int>::iterator ptr = numbers.begin();
     
     return (0);
 }

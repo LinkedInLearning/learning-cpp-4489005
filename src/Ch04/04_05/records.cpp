@@ -1,17 +1,17 @@
 #include "records.h"
 
-Student::Student(int the_id, string the_name){
+Student::Student(int the_id, std::string the_name){
 	id = the_id;
 	name = the_name;
 }
 int Student::get_id(){
 	return id;
 }
-string Student::get_name(){
+std::string Student::get_name(){
 	return name;
 }
 
-Course::Course(int the_id, string the_name, unsigned char the_credits){
+Course::Course(int the_id, std::string the_name, unsigned char the_credits){
 	id = the_id;
 	name = the_name;
 	credits = the_credits;
@@ -19,7 +19,7 @@ Course::Course(int the_id, string the_name, unsigned char the_credits){
 int Course::get_id(){
 	return id;
 }
-string Course::get_name(){
+std::string Course::get_name(){
 	return name;
 }
 int Course::get_credits(){

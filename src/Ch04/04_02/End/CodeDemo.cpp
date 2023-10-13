@@ -9,11 +9,11 @@ char operation;
 
 int main(){
     std::cout << "Enter Operand 1: " << std::endl;
-    cin >> operand_1;
+    std::cin >> operand_1;
     std::cout << "Enter Operand 2: " << std::endl;
-    cin >> operand_2;
+    std::cin >> operand_2;
     std::cout << "Choose Operation: + - * /" << std::endl;
-    cin >> operation;
+    std::cin >> operation;
 
     switch (operation){
     case '+':

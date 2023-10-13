@@ -6,23 +6,23 @@
 #include <vector>
 #include "records.h"
 
-vector<Student> students = {Student(1,"George P. Burdell"),
-							Student(2,"Nancy Rhodes")};
-
-vector<Course> courses = {Course(1,"Algebra",5),
-						  Course(2,"Physics",4),
-						  Course(3,"English",3),
-						  Course(4,"Economics",4)};
-
-vector<Grade> grades = {Grade(1,1,'B'),	Grade(1,2,'A'),	Grade(1,3,'C'),
-						Grade(2,1,'A'),	Grade(2,2,'A'), Grade(2,4,'B')};
-
-float GPA = 0.0f;
-int id;
-
 int main(){
+	std::vector<Student> students = {Student(1,"George P. Burdell"),
+									Student(2,"Nancy Rhodes")};
+
+	std::vector<Course> courses = {Course(1,"Algebra",5),
+								Course(2,"Physics",4),
+								Course(3,"English",3),
+								Course(4,"Economics",4)};
+
+	std::vector<Grade> grades = {Grade(1,1,'B'),	Grade(1,2,'A'),	Grade(1,3,'C'),
+								Grade(2,1,'A'),	Grade(2,2,'A'), Grade(2,4,'B')};
+
+	float GPA = 0.0f;
+	int id;
+
 	std::cout << "Enter a student ID: ";
-	cin >> id;
+	std::cin >> id;
 
 	float points = 0.0f, credits = 0.0f;
 	for (Grade& grd : grades)
@@ -49,7 +49,7 @@ int main(){
 		}
 	GPA = points / credits;
 
-	string student_str;
+	std::string student_str;
 	int i = 0;
 	while (i < students.size() && students[i].get_id() != id)
 		i++;

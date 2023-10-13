@@ -6,12 +6,12 @@
 #include <string>
 #include <fstream>
 
-ifstream inFile;
-string str;
-int number;
-char letter;
-
 int main(){
+    std::ifstream inFile;
+    std::string str;
+    int number;
+    char letter;
+
     inFile.open("people.txt");
     if (inFile.fail())
         std::cout << std::endl << "File not found!" << std::endl;
