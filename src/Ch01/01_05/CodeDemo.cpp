@@ -1,5 +1,5 @@
 // Learning C++ 
-// Challenge Solution 01_05
+// Challenge Solution 01_04
 // Console Interaction, by Eduardo Corpeño 
 
 #include <iostream>
