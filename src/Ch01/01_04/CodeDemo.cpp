@@ -5,11 +5,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main(){
-	string str;
-	cin >> str;
-	cout << str;
+	std::string str;
+	std::cin >> str;
+	std::cout << str;
 	return(0);
 }
