@@ -19,7 +19,7 @@ ofstream outFile;
 
 int main(){
 	initialize(inFile);       // initialize();
-	SR.report_file(outFile);  // SR.report_card(1,cout);
+	SR.report_file(outFile);  // SR.report_card(1,std::cout);
 	return (0);
 }
 
@@ -32,7 +32,7 @@ void initialize(ifstream& inFile){
 
 	inFile.open("students.txt");
 	if (inFile.fail())
-		cout << endl << "File students.txt not found!" << endl;
+		std::cout << std::endl << "File students.txt not found!" << std::endl;
 	else{
 		while (!inFile.eof()){
 			getline(inFile, str);
@@ -42,13 +42,13 @@ void initialize(ifstream& inFile){
 			count++;
 		}
 		inFile.close();
-		cout << "Found " << count << " students" << endl;
+		std::cout << "Found " << count << " students" << std::endl;
 	}
 	
 	count = 0;
 	inFile.open("courses.txt");
 	if (inFile.fail())
-		cout << endl << "File courses.txt not found!" << endl;
+		std::cout << std::endl << "File courses.txt not found!" << std::endl;
 	else{
 		while (!inFile.eof()){
 			getline(inFile, str);
@@ -60,13 +60,13 @@ void initialize(ifstream& inFile){
 			count++;
 		}
 		inFile.close();
-		cout << "Found " << count << " courses" << endl;
+		std::cout << "Found " << count << " courses" << std::endl;
 	}
 
 	count = 0;
 	inFile.open("grades.txt");
 	if (inFile.fail())
-		cout << endl << "File grades.txt not found!" << endl;
+		std::cout << std::endl << "File grades.txt not found!" << std::endl;
 	else{
 		while (!inFile.eof()){
 			getline(inFile, str);
@@ -79,7 +79,7 @@ void initialize(ifstream& inFile){
 			count++;
 		}
 		inFile.close();
-		cout << "Found " << count << " grades" << endl;
+		std::cout << "Found " << count << " grades" << std::endl;
 	}
 }
 

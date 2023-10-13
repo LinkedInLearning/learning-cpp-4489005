@@ -4,15 +4,13 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main(){
     int a = 9, b;
 
-    cout << "a = " << a << ", b = " << b << endl;
+    std::cout << "a = " << a << ", b = " << b << std::endl;
     // swap
-    cout << "a = " << a << ", b = " << b << endl;
+    std::cout << "a = " << a << ", b = " << b << std::endl;
     // swap
-    cout << "a = " << a << ", b = " << b << endl;
+    std::cout << "a = " << a << ", b = " << b << std::endl;
     return (0);
 }

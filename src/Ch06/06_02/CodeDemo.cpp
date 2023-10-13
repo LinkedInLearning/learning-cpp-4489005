@@ -6,22 +6,20 @@
 #include <string>
 #include <fstream>
 
-using namespace std;
-
 ofstream outFile;
 float a = 4.333f, b = 5.302f;
 
 int main(){
     outFile.open("calculations.txt");
     if (outFile.fail())
-        cout << endl << "Couldn't open the file!" << endl;
+        std::cout << std::endl << "Couldn't open the file!" << std::endl;
     else{
-        outFile << "a = " << a << endl;
-        outFile << "b = " << b << endl;
-        outFile << "a + b = " << a + b << endl;
-        outFile << "a * b = " << a * b << endl;
+        outFile << "a = " << a << std::endl;
+        outFile << "b = " << b << std::endl;
+        outFile << "a + b = " << a + b << std::endl;
+        outFile << "a * b = " << a * b << std::endl;
         outFile.close();
-        cout << "File written successfully!" << endl;
+        std::cout << "File written successfully!" << std::endl;
     }
     return (0);
 }

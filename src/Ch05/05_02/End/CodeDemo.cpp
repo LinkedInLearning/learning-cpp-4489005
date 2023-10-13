@@ -6,8 +6,6 @@
 #include <vector>
 #include "records.h"
 
-using namespace std;
-
 void initialize();
 
 StudentRecords SR;
@@ -16,11 +14,11 @@ int id;
 int main(){
 	initialize();
 
-	cout << "Enter a student ID: ";
+	std::cout << "Enter a student ID: ";
 	cin >> id;
 
 	string student_str = SR.get_student_name(id);
-	cout << "The GPA for " << student_str << " is " << SR.get_GPA(id) << endl;
+	std::cout << "The GPA for " << student_str << " is " << SR.get_GPA(id) << std::endl;
 	return (0);
 }
 

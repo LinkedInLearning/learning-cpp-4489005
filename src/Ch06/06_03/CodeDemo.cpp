@@ -6,8 +6,6 @@
 #include <vector>
 #include "records.h"
 
-using namespace std;
-
 void initialize();
 
 StudentRecords SR;
@@ -16,7 +14,7 @@ int id;
 int main(){
 	initialize();
 
-	cout << "Enter a student ID: ";
+	std::cout << "Enter a student ID: ";
 	cin >> id;
 
 	SR.report_card(id);

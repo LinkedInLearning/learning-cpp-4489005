@@ -1,8 +1,6 @@
 #include "records.h"
 #include <iostream>
 
-using namespace std;
-
 Student::Student(int the_id, string the_name){
 	id = the_id;
 	name = the_name;
@@ -109,13 +107,13 @@ string StudentRecords::get_course_name(int cid){
 
 void StudentRecords::report_card(int sid){
 	float points = 0.0f, credits = 0.0f;
-	cout << endl << "Report Card for " << get_student_name(sid) << endl;
+	std::cout << std::endl << "Report Card for " << get_student_name(sid) << std::endl;
 	for (Grade& grd : grades)
 		if (grd.get_student_id() == sid){
-			cout << get_course_name(grd.get_course_id()) << ": " << grd.get_grade() << endl;
+			std::cout << get_course_name(grd.get_course_id()) << ": " << grd.get_grade() << std::endl;
 			unsigned char current_credits = get_course_credits(grd.get_course_id());
 			credits += current_credits;
 			points += get_num_grade(grd.get_grade()) * current_credits;
 		}
-	cout << "GPA: " << (points / credits) << endl;
+	std::cout << "GPA: " << (points / credits) << std::endl;
 }

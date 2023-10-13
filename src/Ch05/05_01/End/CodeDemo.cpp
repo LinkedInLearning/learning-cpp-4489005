@@ -6,8 +6,6 @@
 #include <vector>
 #include "records.h"
 
-using namespace std;
-
 vector<Student> students = {Student(1,"George P. Burdell"),
 							Student(2,"Nancy Rhodes")};
 
@@ -23,7 +21,7 @@ float GPA = 0.0f;
 int id;
 
 int main(){
-	cout << "Enter a student ID: ";
+	std::cout << "Enter a student ID: ";
 	cin >> id;
 
 	float points = 0.0f, credits = 0.0f;
@@ -37,6 +35,6 @@ int main(){
 	GPA = points / credits;
 
 	// get student name
-	cout << "The GPA for " << student_str << " is " << GPA << endl;
+	std::cout << "The GPA for " << student_str << " is " << GPA << std::endl;
 	return (0);
 }

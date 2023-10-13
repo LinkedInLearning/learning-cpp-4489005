@@ -2,8 +2,6 @@
 #include <iostream>
 #include <fstream>
 
-using namespace std;
-
 Student::Student(int the_id, string the_name){
 	id = the_id;
 	name = the_name;
@@ -110,30 +108,30 @@ string StudentRecords::get_course_name(int cid){
 
 void StudentRecords::report_card(int sid, ostream& stream){
 	float points = 0.0f, credits = 0.0f;
-	stream << endl << "Report Card for " << get_student_name(sid) << endl;
+	stream << std::endl << "Report Card for " << get_student_name(sid) << std::endl;
 	for (Grade& grd : grades)
 		if (grd.get_student_id() == sid){
-			stream << get_course_name(grd.get_course_id()) << ": " << grd.get_grade() << endl;
+			stream << get_course_name(grd.get_course_id()) << ": " << grd.get_grade() << std::endl;
 			unsigned char current_credits = get_course_credits(grd.get_course_id());
 			credits += current_credits;
 			points += get_num_grade(grd.get_grade()) * current_credits;
 		}
-	stream << "GPA: " << (points / credits) << endl;
+	stream << "GPA: " << (points / credits) << std::endl;
 }
 
 void StudentRecords::report_file(ofstream &outFile){
 	int sid;
 	outFile.open("report.txt");
     if (outFile.fail())
-        cout << endl << "Couldn't open the file!" << endl;
+        std::cout << std::endl << "Couldn't open the file!" << std::endl;
 	else{
-		outFile << "======================================" << endl;
+		outFile << "======================================" << std::endl;
 		for (auto& st : students){
 			sid = st.get_id();
 			report_card(sid, outFile);
-			outFile << "======================================" << endl;
+			outFile << "======================================" << std::endl;
 		}
 		outFile.close();
-		cout << "Created report.txt successfully" << endl;
+		std::cout << "Created report.txt successfully" << std::endl;
 	}
 }

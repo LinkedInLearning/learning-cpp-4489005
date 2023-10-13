@@ -4,8 +4,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 // Takes arguments by value
 int square(int x){
     x = x * x;
@@ -29,10 +27,10 @@ void swap(int& x, int& y){
 int main(){
     int a = 9, b;
     b = square(a);
-    cout << "a = " << a << ", b = " << b << endl;
+    std::cout << "a = " << a << ", b = " << b << std::endl;
     swap(&a, &b);
-    cout << "a = " << a << ", b = " << b << endl;
+    std::cout << "a = " << a << ", b = " << b << std::endl;
     swap(a, b);
-    cout << "a = " << a << ", b = " << b << endl;
+    std::cout << "a = " << a << ", b = " << b << std::endl;
     return (0);
 }

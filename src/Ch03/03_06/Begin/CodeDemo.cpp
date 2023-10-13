@@ -6,8 +6,6 @@
 #include <string>
 #include "cow.h"
 
-using namespace std;
-
 int main(){
     return (0);
 }
