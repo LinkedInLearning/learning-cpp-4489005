@@ -9,16 +9,14 @@
 #define CAPACITY 5000
 #define DEBUG
 
-using namespace std;
-
 int main(){
     int32_t large = CAPACITY;
     uint8_t small = 37;
 #ifdef DEBUG
-    cout << "[About to perform the addition]" << endl;
+    std::cout << "[About to perform the addition]" << std::endl;
 #endif
-    large += small; // shorthand for large = large + small
-    cout << "The large integer is " << large << endl;
+    large += small; // Shorthand for "large = large + small;"
+    std::cout << "The large integer is " << large << std::endl;
     return (0);
 }
 
