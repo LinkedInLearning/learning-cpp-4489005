@@ -1,40 +1,36 @@
 // Learning C++ 
-// Exercise 05_02
-// Using Functions, by Eduardo Corpeño 
+// Exercise 05_03
+// Function Parameters, by Eduardo Corpeño 
 
 #include <iostream>
-#include <vector>
-#include "records.h"
 
-void initialize(StudentRecords&);
-
-int main(){
-	int id;
-	StudentRecords SR;
-	
-	initialize(SR);
-
-	std::cout << "Enter a student ID: ";
-	std::cin >> id;
-
-	std::string student_str = SR.get_student_name(id);
-	std::cout << "The GPA for " << student_str << " is " << SR.get_GPA(id) << std::endl;
-	return (0);
+// Takes arguments by value
+int square(int x){
+    x = x * x;
+    return x;
 }
 
-void initialize(StudentRecords& srec){
-	srec.add_student(1, "George P. Burdell");
-	srec.add_student(2, "Nancy Rhodes");
+// Takes arguments by address
+void swap(int *x, int *y){
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
 
-	srec.add_course(1, "Algebra", 5);
-	srec.add_course(2, "Physics", 4);
-	srec.add_course(3, "English", 3);
-	srec.add_course(4, "Economics", 4);
+// Takes arguments by reference
+void swap(int& x, int& y){
+    int temp = x;
+    x = y;
+    y = temp;
+}
 
-	srec.add_grade(1, 1, 'B');
-	srec.add_grade(1, 2, 'A');
-	srec.add_grade(1, 3, 'C');
-	srec.add_grade(2, 1, 'A'); 
-	srec.add_grade(2, 2, 'A');
-	srec.add_grade(2, 4, 'B');
+int main(){
+    int a = 9, b;
+    b = square(a);
+    std::cout << "a = " << a << ", b = " << b << std::endl;
+    swap(&a, &b);
+    std::cout << "a = " << a << ", b = " << b << std::endl;
+    swap(a, b);
+    std::cout << "a = " << a << ", b = " << b << std::endl;
+    return (0);
 }
