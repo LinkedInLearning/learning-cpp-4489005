@@ -6,11 +6,11 @@
 #include <string>
 #include "cow.h"
 
-int a = 37;
-int *ptr;
-cow *my_cow;
-
 int main(){
+    int a = 37;
+    int *ptr;
+    cow *my_cow;
+
     ptr = &a;
 
     std::cout << "           The content of a is " << a << std::endl;
@@ -21,7 +21,7 @@ int main(){
     std::cout << std::endl;
 
     my_cow = new cow("Gertie",3,hide);
-    std::cout << my_cow->get_name() << " is a type-" << (int)my_cow->get_purpose() << " cow." << std::endl;
+    std::cout << my_cow->get_name() << " is a type-" << my_cow->get_purpose() << " cow." << std::endl;
     std::cout << my_cow->get_name() << " is " << my_cow->get_age() << " years old." << std::endl;
     
     delete my_cow;

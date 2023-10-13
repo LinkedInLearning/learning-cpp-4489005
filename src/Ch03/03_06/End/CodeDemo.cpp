@@ -1,5 +1,5 @@
 // Learning C++ 
-// Exercise 03_05
+// Exercise 03_06
 // Vectors, by Eduardo Corpeño 
 
 #include <vector>
@@ -7,9 +7,9 @@
 #include <string>
 #include "cow.h"
 
-std::vector<int> primes;
-
 int main(){
+    std::vector<int> primes;
+
     primes.push_back(2);
     primes.push_back(3);
     primes.push_back(5);

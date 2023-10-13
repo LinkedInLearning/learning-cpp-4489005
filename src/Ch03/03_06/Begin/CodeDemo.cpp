@@ -1,5 +1,5 @@
 // Learning C++ 
-// Exercise 03_05
+// Exercise 03_06
 // Vectors, by Eduardo Corpeño 
 
 #include <iostream>

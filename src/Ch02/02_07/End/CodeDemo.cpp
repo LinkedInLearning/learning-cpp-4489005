@@ -4,13 +4,13 @@
 
 #include <iostream>
 
-//#define AGE_LENGTH 4
-const size_t AGE_LENGTH = 4;
-
-int age[AGE_LENGTH];
-float temperature[] = {31.5, 32.7, 38.9};
-
 int main(){
+    //#define AGE_LENGTH 4
+    const size_t AGE_LENGTH = 4;
+
+    int age[AGE_LENGTH];
+    float temperature[] = {31.5, 32.7, 38.9};
+
     age[0] = 25;
     age[1] = 20;
     age[2] = 19;

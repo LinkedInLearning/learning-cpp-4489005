@@ -5,11 +5,11 @@
 #include <iostream>
 #include <cstdint>
 
-float flt = -7.44f;
-int32_t sgn;
-uint32_t unsgn;
-
 int main(){
+    float flt = -7.44f;
+    int32_t sgn;
+    uint32_t unsgn;
+
     sgn = flt;
     unsgn = sgn;
 

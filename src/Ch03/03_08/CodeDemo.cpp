@@ -1,6 +1,6 @@
 // Learning C++ 
-// Challenge Solution 03_07
-// Create some Classes, by Eduardo Corpeño 
+// Challenge Solution 03_08
+// Create some classes, by Eduardo Corpeño 
 
 #include <iostream>
 #include "records.h"

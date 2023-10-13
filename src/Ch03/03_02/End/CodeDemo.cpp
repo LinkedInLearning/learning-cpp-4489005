@@ -9,7 +9,7 @@ enum cow_purpose { dairy, meat, hide, pet };
 
 class cow{
 public:
-    cow(std::string name_i, int age_i, unsigned char purpose_i){
+    cow(std::string name_i, int age_i, cow_purpose purpose_i){
         name = name_i;
         age = age_i;
         purpose = purpose_i;
@@ -20,7 +20,7 @@ public:
     int get_age(){
         return age;
     }
-    unsigned char get_purpose(){
+    cow_purpose get_purpose(){
         return purpose;
     }
     void set_age(int new_age){
@@ -29,12 +29,12 @@ public:
 private:
     std::string name;
     int age;
-    unsigned char purpose;
+    cow_purpose purpose;
 };
 
 int main(){
     cow my_cow("Hildy",7,pet);
-    std::cout << my_cow.get_name() << " is a type-" << (int)my_cow.get_purpose() << " cow." << std::endl;
+    std::cout << my_cow.get_name() << " is a type-" << my_cow.get_purpose() << " cow." << std::endl;
     std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old." << std::endl;
     return (0);
 }
