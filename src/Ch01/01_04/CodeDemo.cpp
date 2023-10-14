@@ -1,5 +1,5 @@
 // Learning C++ 
-// Challenge 01_03
+// Challenge Solution 01_04
 // Console Interaction, by Eduardo Corpeño 
 
 #include <iostream>
@@ -7,7 +7,8 @@
 
 int main(){
 	std::string str;
+	std::cout << "Enter your name: ";
 	std::cin >> str;
-	std::cout << str;
-	return(0);
+	std::cout << "Nice to meet you, " << str << "!" << std::endl;
+	return (0);
 }

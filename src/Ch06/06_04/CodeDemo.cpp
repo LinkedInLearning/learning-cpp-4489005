@@ -7,8 +7,6 @@
 #include <vector>
 #include "records.h"
 
-using namespace std;
-
 void initialize();
 void initialize(StudentRecords&, std::ifstream&);
 
@@ -16,16 +14,16 @@ void initialize(StudentRecords&, std::ifstream&);
 int main(){
 	StudentRecords SR;
 	int id;
-	ifstream inFile;
-	ofstream outFile;
+	std::ifstream inFile;
+	std::ofstream outFile;
 
 	initialize(SR, inFile);   // initialize(SR);
 	SR.report_file(outFile);  // SR.report_card(1,std::cout);
 	return (0);
 }
 
-void initialize(StudentRecords& srec, ifstream& inFile){
-	string str, name;
+void initialize(StudentRecords& srec, std::ifstream& inFile){
+	std::string str, name;
 	int sid, cid;
 	unsigned char credits;
 	char grade;

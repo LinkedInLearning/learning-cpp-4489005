@@ -4,9 +4,7 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main(){
-	cout << "Hi There!" << endl;
+	std::cout << "Hi There!" << std::endl;
 	return(0);
 }
