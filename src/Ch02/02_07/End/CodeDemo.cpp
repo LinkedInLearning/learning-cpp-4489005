@@ -4,8 +4,9 @@
 
 #include <iostream>
 
+// #define AGE_LENGTH 4
+
 int main(){
-    //#define AGE_LENGTH 4
     const size_t AGE_LENGTH = 4;
 
     int age[AGE_LENGTH];
