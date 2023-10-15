@@ -14,8 +14,8 @@ int main(){
     unsgn = sgn;
 
     std::cout << " float: " << flt << std::endl;
-    std::cout << " int32: " << sgn << std::endl;
-    std::cout << "uint32: " << unsgn << std::endl;
+    std::cout << " int32: " << (float) sgn << std::endl;
+    std::cout << "uint32: " << (int32_t) unsgn << std::endl;
 
     int fahrenheit = 100;
     int celsius;
