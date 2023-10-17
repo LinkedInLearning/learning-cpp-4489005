@@ -4,19 +4,19 @@
 #define COW_H
 #include <string>
 
-enum cow_purpose { dairy, meat, hide, pet };
+enum class cow_purpose { dairy, meat, hide, pet };
 
 class cow{
 public:
-    cow(std::string name_i, int age_i, unsigned char purpose_i);
+    cow(std::string name_i, int age_i, cow_purpose purpose_i);
     std::string get_name();
     int get_age();
-    unsigned char get_purpose();
+    cow_purpose get_purpose();
     void set_age(int new_age);
 private:
     std::string name;
     int age;
-    unsigned char purpose;
+    cow_purpose purpose;
 };
 
 #endif // COW_H
