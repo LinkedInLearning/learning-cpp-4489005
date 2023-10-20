@@ -41,4 +41,3 @@ int Grade::get_course_id(){
 char Grade::get_grade(){
 	return grade;
 }
-

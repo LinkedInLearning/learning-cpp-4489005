@@ -20,5 +20,7 @@ int main(){
     my_cow.purpose = dairy;
     std::cout << my_cow.name << " is a type-" << my_cow.purpose << " cow." << std::endl;
     std::cout << my_cow.name << " is " << my_cow.age << " years old." << std::endl;
+	
+    std::cout << std::endl << std::endl;
     return (0);
 }

@@ -25,20 +25,7 @@ int main(){
 
     if (flag)
         std::cout << "The flag is true!" << std::endl;
-
+	
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

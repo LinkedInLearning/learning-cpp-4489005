@@ -20,21 +20,7 @@ int main(){
         average += x;
     average /= numbers.size();
     std::cout << "Average: " << average << std::endl;
-   
+   	
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

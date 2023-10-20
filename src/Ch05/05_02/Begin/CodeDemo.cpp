@@ -12,5 +12,7 @@ int main(){
     std::cout << "a = " << a << ", b = " << b << std::endl;
     // swap
     std::cout << "a = " << a << ", b = " << b << std::endl;
+	
+    std::cout << std::endl << std::endl;
     return (0);
 }

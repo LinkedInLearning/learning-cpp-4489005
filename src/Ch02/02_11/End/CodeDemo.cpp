@@ -6,10 +6,11 @@
 #include <cstdint>
 
 int main(){
-    float flt = -7.44f;
+    float flt;
     int32_t sgn;
     uint32_t unsgn;
 
+    flt = -7.44;
     sgn = flt;
     unsgn = sgn;
 
@@ -33,16 +34,6 @@ int main(){
     std::cout << "Integer part   : " << (int) weight << std::endl;
     std::cout << "Fractional part: " << (int)((weight - (int)weight) * 10000) << std::endl;
 
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
-

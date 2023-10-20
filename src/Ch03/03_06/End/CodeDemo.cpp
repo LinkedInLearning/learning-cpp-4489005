@@ -25,11 +25,7 @@ int main(){
     std::cout << my_cow->get_name() << " is " << my_cow->get_age() << " years old." << std::endl;
     
     delete my_cow;
+	
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-

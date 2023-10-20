@@ -19,7 +19,9 @@ int main(){
 
 	initialize(SR, inFile);   // initialize(SR);
 	SR.report_file(outFile);  // SR.report_card(1,std::cout);
-	return (0);
+	
+    std::cout << std::endl << std::endl;
+    return (0);
 }
 
 void initialize(StudentRecords& srec, std::ifstream& inFile){

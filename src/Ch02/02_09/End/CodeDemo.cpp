@@ -18,16 +18,7 @@ int main(){
     strncat(array_str1, array_str2, LENGTH1);
     std::cout << array_str1 << std::endl;
     std::cout << std_str1 + std_str2 << std::endl;
+
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
-

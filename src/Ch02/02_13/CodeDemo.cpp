@@ -12,5 +12,7 @@ int main(){
 	result /= 5;
 	
 	std::cout << "The average is " << result << std::endl;
-	return (0);
+	
+    std::cout << std::endl << std::endl;
+    return (0);
 }

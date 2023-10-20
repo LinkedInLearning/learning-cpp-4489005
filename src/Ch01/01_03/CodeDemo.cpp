@@ -9,5 +9,7 @@ int main(){
 	std::string str;
 	std::cin >> str;
 	std::cout << str;
-	return(0);
+
+    std::cout << std::endl << std::endl;
+    return (0);
 }

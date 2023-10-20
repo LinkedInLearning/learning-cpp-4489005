@@ -30,9 +30,7 @@ int main(){
 	student_str = students[0].get_name(); // Change this to the selected student's name
 
 	std::cout << "The GPA for " << student_str << " is " << GPA << std::endl;
-	return (0);
+	
+    std::cout << std::endl << std::endl;
+    return (0);
 }
-
-
-
-

@@ -19,16 +19,7 @@ int main(){
     std::cout << "The type of d is " << typeid(d).name() << std::endl;
     std::cout << "The type of e is " << typeid(e).name() << std::endl;
     std::cout << "The type of f is " << typeid(f).name() << std::endl;
+
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
-

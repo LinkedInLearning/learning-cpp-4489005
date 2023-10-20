@@ -19,7 +19,8 @@ int main(){
 
 	SR.report_card(id);
 	
-	return (0);
+    std::cout << std::endl << std::endl;
+    return (0);
 }
 
 void initialize(StudentRecords& srec){

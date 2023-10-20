@@ -39,5 +39,7 @@ int main(){
 	std::string student_str;
 	// get student name
 	std::cout << "The GPA for " << student_str << " is " << GPA << std::endl;
-	return (0);
+	
+    std::cout << std::endl << std::endl;
+    return (0);
 }

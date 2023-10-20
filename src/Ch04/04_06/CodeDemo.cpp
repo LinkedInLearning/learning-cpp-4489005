@@ -55,11 +55,7 @@ int main(){
 		i++;
 	student_str = students[i].get_name();
 	std::cout << "The GPA for " << student_str << " is " << GPA << std::endl;
-	return (0);
+	
+    std::cout << std::endl << std::endl;
+    return (0);
 }
-
-
-
-
-
-

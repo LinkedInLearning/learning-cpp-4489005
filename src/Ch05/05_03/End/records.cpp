@@ -96,4 +96,3 @@ float StudentRecords::get_GPA(int sid){
 		}
 	return (points / credits);
 }
-

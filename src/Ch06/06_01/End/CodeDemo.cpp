@@ -28,5 +28,7 @@ int main(){
         }
         inFile.close();
     }
+	
+    std::cout << std::endl << std::endl;
     return (0);
 }

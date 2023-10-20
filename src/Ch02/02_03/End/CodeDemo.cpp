@@ -24,15 +24,7 @@ int main(){
     unsigned int positive;
     positive = b - a;
     std::cout << "b-a (unsigned) = " << positive << std::endl;
+
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-

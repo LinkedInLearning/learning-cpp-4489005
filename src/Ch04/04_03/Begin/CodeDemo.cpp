@@ -9,6 +9,7 @@ int main(){
     std::vector<int> numbers = {12,25,31,47,58};
     
     std::vector<int>::iterator ptr = numbers.begin();
-    
+	
+    std::cout << std::endl << std::endl;
     return (0);
 }

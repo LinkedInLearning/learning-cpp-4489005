@@ -17,19 +17,7 @@ int main(){
 #endif
     large += small; // Shorthand for "large = large + small;"
     std::cout << "The large integer is " << large << std::endl;
+
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

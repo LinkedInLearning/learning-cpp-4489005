@@ -27,13 +27,6 @@ int main(){
     std::cout << "Temp[1] = " << temperature[1] << std::endl;
     std::cout << "Temp[2] = " << temperature[2] << std::endl;
 
+    std::cout << std::endl << std::endl;
     return (0);
 }
-
-
-
-
-
-
-
-
