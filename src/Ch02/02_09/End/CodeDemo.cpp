@@ -1,38 +1,23 @@
 // Learning C++ 
 // Exercise 02_09
-// Type Casting, by Eduardo Corpeño 
+// Strings, by Eduardo Corpeño 
 
 #include <iostream>
-#include <cstdint>
+#include <string>
+#include <cstring>
 
 int main(){
-    float flt = -7.44f;
-    int32_t sgn;
-    uint32_t unsgn;
+    const size_t LENGTH1 = 25;
 
-    sgn = flt;
-    unsgn = sgn;
+    char array_str1[LENGTH1] = "Hey guys! ";
+    char array_str2[] = "What's up?";
 
-    std::cout << " float: " << flt << std::endl;
-    std::cout << " int32: " << (float) sgn << std::endl;
-    std::cout << "uint32: " << (int32_t) unsgn << std::endl;
+    std::string std_str1 = "Hi everybody! ";
+    std::string std_str2 = "How's the going?";
 
-    int fahrenheit = 100;
-    int celsius;
-
-    celsius = ((float)5 / 9.0) * (fahrenheit - 32);
-
-    std::cout << std::endl;
-    std::cout << "Fahrenheit: " << fahrenheit << std::endl;
-    std::cout << "Celsius   : " << celsius << std::endl;
-
-    float weight = 10.99;
-    
-    std::cout << std::endl;
-    std::cout << "Float          : " << weight << std::endl;
-    std::cout << "Integer part   : " << (int) weight << std::endl;
-    std::cout << "Fractional part: " << (int)((weight - (int)weight) * 10000) << std::endl;
-
+    strncat(array_str1, array_str2, LENGTH1);
+    std::cout << array_str1 << std::endl;
+    std::cout << std_str1 + std_str2 << std::endl;
     return (0);
 }
 

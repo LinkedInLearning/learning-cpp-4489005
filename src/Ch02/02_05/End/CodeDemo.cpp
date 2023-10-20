@@ -1,27 +1,26 @@
 // Learning C++ 
 // Exercise 02_05
-// Preprocessor directives, by Eduardo Corpeño 
+// Type inference with auto, by Eduardo Corpeño 
 
 #include <iostream>
-#include <string>
-#include <cstdint>
-
-#define CAPACITY 5000
-#define DEBUG
+#include <typeinfo>
 
 int main(){
-    int32_t large = CAPACITY;
-    uint8_t small = 37;
-#ifdef DEBUG
-    std::cout << "[About to perform the addition]" << std::endl;
-#endif
-    large += small; // Shorthand for "large = large + small;"
-    std::cout << "The large integer is " << large << std::endl;
+    auto a = 8;
+    auto b = 12345678901;
+    auto c = 3.14f;
+    auto d = 3.14;
+    auto e = true;
+    auto f = 'd';
+
+    std::cout << "The type of a is " << typeid(a).name() << std::endl;
+    std::cout << "The type of b is " << typeid(b).name() << std::endl;
+    std::cout << "The type of c is " << typeid(c).name() << std::endl;
+    std::cout << "The type of d is " << typeid(d).name() << std::endl;
+    std::cout << "The type of e is " << typeid(e).name() << std::endl;
+    std::cout << "The type of f is " << typeid(f).name() << std::endl;
     return (0);
 }
-
-
-
 
 
 

@@ -1,8 +1,9 @@
 // Learning C++ 
 // Exercise 02_05
-// Preprocessor directives, by Eduardo Corpeño 
+// Type inference with auto, by Eduardo Corpeño 
 
 #include <iostream>
+#include <typeinfo>
 
 int main(){
     return (0);

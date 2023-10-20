@@ -1,6 +1,6 @@
 // Learning C++ 
-// Exercise 03_06
-// Pointers, by Eduardo Corpeño 
+// Exercise 03_07
+// Using Objects with Pointers, by Eduardo Corpeño 
 
 #include <iostream>
 #include <string>

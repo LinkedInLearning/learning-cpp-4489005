@@ -1,11 +1,11 @@
 // Learning C++ 
-// Exercise 03_03
-// Using Classes, by Eduardo Corpeño 
+// Exercise 03_05
+// Using Several Source Files, by Eduardo Corpeño 
 
 #include <iostream>
 #include <string>
 
-enum cow_purpose { dairy, meat, hide, pet };
+enum cow_purpose {dairy, meat, hide, pet};
 
 class cow{
 public:
@@ -38,10 +38,3 @@ int main(){
     std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old." << std::endl;
     return (0);
 }
-
-
-
-
-
-
-

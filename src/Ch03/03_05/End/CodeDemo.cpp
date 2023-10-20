@@ -1,6 +1,6 @@
 // Learning C++ 
-// Exercise 03_06
-// Pointers, by Eduardo Corpeño 
+// Exercise 03_05
+// Using Several Source Files, by Eduardo Corpeño 
 
 #include <iostream>
 #include <string>
