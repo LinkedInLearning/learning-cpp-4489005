@@ -6,18 +6,6 @@
 #include <cstdint>
 
 int main(){
-    float flt;
-    int32_t sgn;
-    uint32_t unsgn;
-
-    flt = -7.44;
-    sgn = flt;
-    unsgn = sgn;
-
-    std::cout << " float: " << flt << std::endl;
-    std::cout << " int32: " << (float) sgn << std::endl;
-    std::cout << "uint32: " << (int32_t) unsgn << std::endl;
-
     int fahrenheit = 100;
     int celsius;
 
