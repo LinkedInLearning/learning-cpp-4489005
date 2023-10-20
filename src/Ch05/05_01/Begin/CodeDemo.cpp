@@ -7,7 +7,6 @@
 #include "records.h"
 
 int main(){
-
 	std::vector<Student> students = {Student(1,"George P. Burdell"),
 									Student(2,"Nancy Rhodes")};
 
