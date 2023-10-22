@@ -14,17 +14,14 @@ public:
         age = age_i;
         purpose = purpose_i;
     }
-    std::string get_name(){
+    std::string get_name() const{
         return name;
     }
-    int get_age(){
+    int get_age() const{
         return age;
     }
-    cow_purpose get_purpose(){
+    cow_purpose get_purpose() const{
         return purpose;
-    }
-    void set_age(int new_age){
-        age = new_age;
     }
 private:
     std::string name;
@@ -33,9 +30,12 @@ private:
 };
 
 int main(){
-    cow my_cow("Hildy",7,pet);
-    std::cout << my_cow.get_name() << " is a type-" << my_cow.get_purpose() << " cow." << std::endl;
-    std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old." << std::endl;
+    cow my_cow;
+    my_cow.age = 5;
+    my_cow.name = "Betsy";
+    my_cow.purpose = dairy;
+    std::cout << my_cow.name << " is a type-" << my_cow.purpose << " cow." << std::endl;
+    std::cout << my_cow.name << " is " << my_cow.age << " years old." << std::endl;
 	
     std::cout << std::endl << std::endl;
     return (0);

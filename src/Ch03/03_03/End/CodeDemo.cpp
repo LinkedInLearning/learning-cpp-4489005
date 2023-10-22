@@ -14,13 +14,13 @@ public:
         age = age_i;
         purpose = purpose_i;
     }
-    std::string get_name(){
+    std::string get_name() const{
         return name;
     }
-    int get_age(){
+    int get_age() const{
         return age;
     }
-    cow_purpose get_purpose(){
+    cow_purpose get_purpose() const{
         return purpose;
     }
     void set_age(int new_age){
