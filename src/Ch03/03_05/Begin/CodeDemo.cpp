@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-enum cow_purpose {dairy, meat, hide, pet};
+enum class cow_purpose {dairy, meat, hide, pet};
 
 class cow{
 public:
@@ -14,13 +14,13 @@ public:
         age = age_i;
         purpose = purpose_i;
     }
-    std::string get_name(){
+    std::string get_name() const{
         return name;
     }
-    int get_age(){
+    int get_age() const{
         return age;
     }
-    cow_purpose get_purpose(){
+    cow_purpose get_purpose() const{
         return purpose;
     }
     void set_age(int new_age){
@@ -33,8 +33,8 @@ private:
 };
 
 int main(){
-    cow my_cow("Hildy",7,pet);
-    std::cout << my_cow.get_name() << " is a type-" << my_cow.get_purpose() << " cow." << std::endl;
+    cow my_cow("Hildy", 7, cow_purpose::pet);
+    std::cout << my_cow.get_name() << " is a type-" << (int)my_cow.get_purpose() << " cow." << std::endl;
     std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old." << std::endl;
 	
     std::cout << std::endl << std::endl;

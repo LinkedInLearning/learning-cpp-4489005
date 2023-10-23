@@ -4,7 +4,7 @@
 #define COW_H
 #include <string>
 
-enum class cow_purpose { dairy, meat, hide, pet };
+enum class cow_purpose {dairy, meat, hide, pet};
 
 class cow{
 public:
