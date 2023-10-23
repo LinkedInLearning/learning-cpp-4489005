@@ -4,10 +4,10 @@
 
 #include <iostream>
 
-float operand_1, operand_2, result;
-char operation;
-
 int main(){
+    float operand_1, operand_2, result;
+    char operation;
+
     std::cout << "Enter Operand 1: " << std::endl;
     std::cin >> operand_1;
     std::cout << "Enter Operand 2: " << std::endl;
