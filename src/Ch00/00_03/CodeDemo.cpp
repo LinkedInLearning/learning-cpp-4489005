@@ -1,6 +1,6 @@
 // Learning C++ 
-// Exercise 04_02
-// Switch Statements, by Eduardo Corpeño 
+// Exercise 00_03
+// Using the exercise files on GitHub, by Eduardo Corpeño 
 
 #include <iostream>
 
@@ -12,12 +12,9 @@ int main(){
     std::cin >> operand_1;
     std::cout << "Enter operand 2: " << std::flush;
     std::cin >> operand_2;
-    std::cout << "Choose operation [ + - * / ]: " << std::flush;
-    std::cin >> operation;
-
-    // switch goes here
-
-    std::cout << "The result is " << result << std::endl;
+    result = operand_1 + operand_2;
+    
+    std::cout << "The result of the addition is " << result << std::endl;
 	
     std::cout << std::endl << std::endl;
     return (0);
