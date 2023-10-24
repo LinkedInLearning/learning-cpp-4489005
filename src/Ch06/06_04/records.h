@@ -11,8 +11,8 @@ private:
 
 public:
 	Student(int the_id, std::string the_name);
-	int get_id();
-	std::string get_name();
+	int get_id() const;
+	std::string get_name() const;
 };
 
 class Course{
@@ -23,9 +23,9 @@ private:
 
 public:
 	Course(int the_id, std::string the_name, unsigned char the_credits);
-	int get_id();
-	std::string get_name();
-	int get_credits();
+	int get_id() const;
+	std::string get_name() const;
+	int get_credits() const;
 };
 
 class Grade{
@@ -36,9 +36,9 @@ private:
 
 public:
 	Grade(int sid, int cid, char grd);
-	int get_student_id();
-	int get_course_id();
-	char get_grade();
+	int get_student_id() const;
+	int get_course_id() const;
+	char get_grade() const;
 };
 
 class StudentRecords{
@@ -47,17 +47,17 @@ private:
 	std::vector<Course> courses;
 	std::vector<Grade> grades;
 
-	float get_num_grade(char);
+	float get_num_grade(char) const;
 	
 public:
 	void add_student(int, std::string);
 	void add_course(int, std::string, unsigned char);
 	void add_grade(int, int, char);
 
-	std::string get_student_name(int);
-	unsigned char get_course_credits(int);
-	float get_GPA(int);
-	std::string get_course_name(int);
+	std::string get_student_name(int) const;
+	unsigned char get_course_credits(int) const;
+	float get_GPA(int) const;
+	std::string get_course_name(int) const;
 	void report_card(int, std::ostream&);
 	void report_file(std::ofstream&); 
 };

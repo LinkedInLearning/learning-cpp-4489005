@@ -6,10 +6,10 @@ Student::Student(int the_id, std::string the_name){
 	id = the_id;
 	name = the_name;
 }
-int Student::get_id(){
+int Student::get_id() const{
 	return id;
 }
-std::string Student::get_name(){
+std::string Student::get_name() const{
 	return name;
 }
 
@@ -18,13 +18,13 @@ Course::Course(int the_id, std::string the_name, unsigned char the_credits){
 	name = the_name;
 	credits = the_credits;
 }
-int Course::get_id(){
+int Course::get_id() const{
 	return id;
 }
-std::string Course::get_name(){
+std::string Course::get_name() const{
 	return name;
 }
-int Course::get_credits(){
+int Course::get_credits() const{
 	return credits;
 }
 
@@ -34,13 +34,13 @@ Grade::Grade(int sid, int cid, char grd){
 	course_id = cid;
 	grade = grd;
 }
-int Grade::get_student_id(){
+int Grade::get_student_id() const{
 	return student_id;
 }
-int Grade::get_course_id(){
+int Grade::get_course_id() const{
 	return course_id;
 }
-char Grade::get_grade(){
+char Grade::get_grade() const{
 	return grade;
 }
 
@@ -56,7 +56,7 @@ void StudentRecords::add_grade(int sid, int cid, char grade){
 	grades.push_back(Grade(sid, cid, grade));
 }
 
-float StudentRecords::get_num_grade(char letter){
+float StudentRecords::get_num_grade(char letter) const{
 	float num_grd;          // float for the numeric grade
 	switch (letter){
 	case 'A': num_grd = 4.0f;
@@ -73,23 +73,23 @@ float StudentRecords::get_num_grade(char letter){
 	return num_grd;
 }
 
-std::string StudentRecords::get_student_name(int sid){
+std::string StudentRecords::get_student_name(int sid) const{
 	int i = 0;
 	while (i < students.size() && students[i].get_id() != sid)
 		i++;
 	return students[i].get_name();
 }
 
-unsigned char StudentRecords::get_course_credits(int cid){
+unsigned char StudentRecords::get_course_credits(int cid) const{
 	int j = 0;
 	while (j < courses.size() && courses[j].get_id() != cid)
 		j++;
 	return courses[j].get_credits();
 }
 
-float StudentRecords::get_GPA(int sid){
+float StudentRecords::get_GPA(int sid) const{
 	float points = 0.0f, credits = 0.0f;
-	for (Grade& grd : grades)
+	for (const Grade& grd : grades)
 		if (grd.get_student_id() == sid){
 			// calculate total credits and points
 			unsigned char current_credits = get_course_credits(grd.get_course_id());
@@ -99,7 +99,7 @@ float StudentRecords::get_GPA(int sid){
 	return (points / credits);
 }
 
-std::string StudentRecords::get_course_name(int cid){
+std::string StudentRecords::get_course_name(int cid) const{
 	int j = 0;
 	while (j < courses.size() && courses[j].get_id() != cid)
 		j++;

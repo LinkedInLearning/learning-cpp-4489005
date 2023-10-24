@@ -15,8 +15,8 @@ int main(){
 								Course(3, "English", 3),
 								Course(4, "Economics", 4)};
 
-	std::vector<Grade> grades = {Grade(1, 1, 'B'), Grade(1,2,'A'), Grade(1,3,'C'),
-								Grade(2, 1, 'A'), Grade(2,2,'A'), Grade(2,4,'B')};
+	std::vector<Grade> grades = {Grade(1, 1, 'B'), Grade(1, 2, 'A'), Grade(1, 3, 'C'),
+								Grade(2, 1, 'A'), Grade(2, 2, 'A'), Grade(2, 4, 'B')};
 
 	float GPA = 0.0f;
 	int id;
