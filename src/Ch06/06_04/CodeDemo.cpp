@@ -18,7 +18,7 @@ int main(){
 	std::ofstream outFile;
 
 	initialize(SR, inFile);   // initialize(SR);
-	SR.report_file(outFile);  // SR.report_card(1,std::cout);
+	SR.report_file(outFile);  // SR.report_card(1, std::cout);
 	
     std::cout << std::endl << std::endl;
     return (0);
