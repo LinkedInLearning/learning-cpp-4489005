@@ -6,7 +6,6 @@
 
 int main(){
     float operand_1, operand_2, result;
-    char operation;
 
     std::cout << "Enter operand 1: " << std::flush;
     std::cin >> operand_1;
