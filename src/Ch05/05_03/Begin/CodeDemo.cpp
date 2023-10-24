@@ -21,7 +21,7 @@ int main(){
 	float GPA = 0.0f;
 	int id;
 
-	std::cout << "Enter a student ID: ";
+	std::cout << "Enter a student ID: " << std::flush;
 	std::cin >> id;
 
 	float points = 0.0f, credits = 0.0f;

@@ -12,6 +12,7 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 4,
   "editor.useTabStops": true,
+  "editor.autoClosingBrackets": "never",
   "emmet.triggerExpansionOnTab": true,
   "explorer.openEditors.visible": 0,
   "files.autoSave": "afterDelay",

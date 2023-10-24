@@ -20,7 +20,7 @@ int main(){
 
 	float GPA = 0.0f;
 	int id;
-	std::cout << "Enter a student ID: ";
+	std::cout << "Enter a student ID: " << std::flush;
 	std::cin >> id;
 
 	// Calculate the GPA for the selected student.

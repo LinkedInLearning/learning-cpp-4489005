@@ -8,11 +8,11 @@ int main(){
     float operand_1, operand_2, result;
     char operation;
 
-    std::cout << "Enter Operand 1: " << std::endl;
+    std::cout << "Enter Operand 1: " << std::flush;
     std::cin >> operand_1;
-    std::cout << "Enter Operand 2: " << std::endl;
+    std::cout << "Enter Operand 2: " << std::flush;
     std::cin >> operand_2;
-    std::cout << "Choose Operation: + - * /" << std::endl;
+    std::cout << "Choose Operation [ + - * / ]: " << std::flush;
     std::cin >> operation;
 
     // switch goes here
