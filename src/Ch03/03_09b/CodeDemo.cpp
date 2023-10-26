@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <string>
-#include "cow.h"
 
 int main(){
 	
