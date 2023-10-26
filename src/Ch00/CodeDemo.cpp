@@ -5,13 +5,14 @@
 #include <iostream>
 
 int main(){
-    float operand_1, operand_2, result;
+    float num_1, num_2, result;
 
-    std::cout << "Enter operand 1: " << std::flush;
-    std::cin >> operand_1;
-    std::cout << "Enter operand 2: " << std::flush;
-    std::cin >> operand_2;
-    result = operand_1 + operand_2;
+    std::cout << "Enter number 1: " << std::flush;
+    std::cin >> num_1;
+    std::cout << "Enter number 2: " << std::flush;
+    std::cin >> num_2;
+    
+    result = num_1 + num_2;
     
     std::cout << "The result of the addition is " << result << std::endl;
 	
