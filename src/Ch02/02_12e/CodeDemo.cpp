@@ -12,9 +12,9 @@ int main(){
     int meat = 8;
     cow_purpose a;
 
-    a = meat;
+    a = cow_purpose::meat;
 
-    std::cout << std::endl << "a = " << (int) a << std::endl;
+    std::cout << "a = " << (int) a << std::endl;
 
     std::cout << std::endl << std::endl;
     return (0);

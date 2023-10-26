@@ -12,7 +12,7 @@ int main(){
 
     a = meat;
 
-    std::cout << std::endl << "a = " << a << std::endl;
+    std::cout << "a = " << a << std::endl;
 
     std::cout << std::endl << std::endl;
     return (0);
