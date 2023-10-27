@@ -7,7 +7,7 @@
 
 int main(){
 	Student my_student(1, "Hilda Jones");
-	Course my_course(7, "Physics 101", 3);
+	Course my_course(7, "Physics 101", 4);
 	Grade my_grade(1, 7, 'B');
 
 	std::cout << "Student: " << my_student.get_name() << std::endl;

@@ -12,6 +12,7 @@ int main(){
     auto d = 3.14;
     auto e = true;
     auto f = 'd';
+    auto g = "C++ rocks!";
 
     std::cout << "The type of a is " << typeid(a).name() << std::endl;
     std::cout << "The type of b is " << typeid(b).name() << std::endl;
@@ -19,6 +20,7 @@ int main(){
     std::cout << "The type of d is " << typeid(d).name() << std::endl;
     std::cout << "The type of e is " << typeid(e).name() << std::endl;
     std::cout << "The type of f is " << typeid(f).name() << std::endl;
+    std::cout << "The type of g is " << typeid(g).name() << std::endl;
 
     std::cout << std::endl << std::endl;
     return (0);
