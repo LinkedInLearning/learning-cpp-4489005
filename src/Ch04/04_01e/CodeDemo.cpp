@@ -18,13 +18,17 @@ int main(){
         std::cout << "a is even" << std::endl;
 
     std::cout << "The letter " << letter << " is ";
-    if (letter != 'a' && letter != 'e' && letter != 'i' && letter != 'o' && letter != 'u' &&
-        letter != 'A' && letter != 'E' && letter != 'I' && letter != 'O' && letter != 'U')
+    if (letter != 'a' && letter != 'e' && letter != 'i' && 
+        letter != 'o' && letter != 'u' &&
+        letter != 'A' && letter != 'E' && letter != 'I' && 
+        letter != 'O' && letter != 'U')
         std::cout << "not ";
     std::cout << "a vowel." << std::endl;
 
     if (flag)
         std::cout << "The flag is true!" << std::endl;
+	else
+        std::cout << "The flag is false!" << std::endl;
 	
     std::cout << std::endl << std::endl;
     return (0);
