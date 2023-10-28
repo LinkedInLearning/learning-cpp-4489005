@@ -4,11 +4,11 @@
 
 #include <iostream>
 
-int a = 1023;
-bool flag = false;
-char letter = 'd';
-
 int main(){
+    int a = 1023;
+    bool flag = false;
+    char letter = 'd';
+
     if (a > 1000)
         std::cout << "Warning: a is over 1000." << std::endl;
 
