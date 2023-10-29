@@ -6,7 +6,7 @@
 
 int main(){
     int a = 9, b;
-
+    // square
     std::cout << "a = " << a << ", b = " << b << std::endl;
     // swap
     std::cout << "a = " << a << ", b = " << b << std::endl;
