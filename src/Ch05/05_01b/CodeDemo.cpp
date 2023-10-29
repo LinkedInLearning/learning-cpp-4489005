@@ -40,7 +40,7 @@ int main(){
 			default:  num_grd = 0.0f;
 				break;
 			};
-			// calculate total credits and points
+			
 			int j = 0;
 			while (j < courses.size() && courses[j].get_id() != grd.get_course_id())
 				j++;
