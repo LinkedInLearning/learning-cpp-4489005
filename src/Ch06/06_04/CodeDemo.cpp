@@ -7,9 +7,8 @@
 #include <vector>
 #include "records.h"
 
-void initialize();
+void initialize(StudentRecords&);
 void initialize(StudentRecords&, std::ifstream&);
-
 
 int main(){
 	StudentRecords SR;
