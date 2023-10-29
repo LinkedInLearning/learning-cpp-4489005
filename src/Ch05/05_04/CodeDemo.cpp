@@ -17,8 +17,7 @@ int main(){
 	std::cout << "Enter a student ID: " << std::flush;
 	std::cin >> id;
 
-	std::string student_str = SR.get_student_name(id);
-	std::cout << "The GPA for " << student_str << " is " << SR.get_GPA(id) << std::endl;
+	SR.report_card(id);
 	
     std::cout << std::endl << std::endl;
     return (0);

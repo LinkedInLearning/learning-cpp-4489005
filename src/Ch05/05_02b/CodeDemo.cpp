@@ -6,11 +6,11 @@
 
 int main(){
     int a = 9, b;
-    // square
+    // TODO: square
     std::cout << "a = " << a << ", b = " << b << std::endl;
-    // swap
+    // TODO: swap
     std::cout << "a = " << a << ", b = " << b << std::endl;
-    // swap
+    // TODO: swap
     std::cout << "a = " << a << ", b = " << b << std::endl;
 	
     std::cout << std::endl << std::endl;
