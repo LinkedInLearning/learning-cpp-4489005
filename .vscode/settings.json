@@ -11,6 +11,7 @@
   "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
   "editor.tabSize": 4,
+  "editor.detectIndentation": false,
   "editor.useTabStops": true,
   "editor.autoClosingBrackets": "never",
   "emmet.triggerExpansionOnTab": true,
