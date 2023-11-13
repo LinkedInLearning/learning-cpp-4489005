@@ -59,16 +59,16 @@ void StudentRecords::add_grade(int sid, int cid, char grade){
 float StudentRecords::get_num_grade(char letter) const{
     float num_grd;          // float for the numeric grade
     switch (letter){
-    case 'A': num_grd = 4.0f;
-        break;
-    case 'B': num_grd = 3.0f;
-        break;
-    case 'C': num_grd = 2.0f;
-        break;
-    case 'D': num_grd = 1.0f;
-        break;
-    default:  num_grd = 0.0f;
-        break;
+        case 'A': num_grd = 4.0f;
+            break;
+        case 'B': num_grd = 3.0f;
+            break;
+        case 'C': num_grd = 2.0f;
+            break;
+        case 'D': num_grd = 1.0f;
+            break;
+        default:  num_grd = 0.0f;
+            break;
     };
     return num_grd;
 }
