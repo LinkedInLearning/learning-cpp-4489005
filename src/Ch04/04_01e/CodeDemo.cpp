@@ -7,7 +7,7 @@
 int main(){
     int a = 1023;
     bool flag = false;
-    char letter = 'd';
+    char ltr = 'd';
 
     if (a > 1000)
         std::cout << "Warning: a is over 1000." << std::endl;
@@ -17,11 +17,9 @@ int main(){
     else
         std::cout << "a is even" << std::endl;
 
-    std::cout << "The letter " << letter << " is ";
-    if (letter != 'a' && letter != 'e' && letter != 'i' && 
-        letter != 'o' && letter != 'u' &&
-        letter != 'A' && letter != 'E' && letter != 'I' && 
-        letter != 'O' && letter != 'U')
+    std::cout << "The letter " << ltr << " is ";
+    if (ltr != 'a' && ltr != 'e' && ltr != 'i' && ltr != 'o' && ltr != 'u' &&
+        ltr != 'A' && ltr != 'E' && ltr != 'I' && ltr != 'O' && ltr != 'U')
         std::cout << "not ";
     std::cout << "a vowel." << std::endl;
 
