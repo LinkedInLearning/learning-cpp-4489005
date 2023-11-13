@@ -19,7 +19,7 @@ int main(){
     std::cout << "At index 1 we have " << cattle[1].get_name() << std::endl;
     std::cout << "Next to last is " << prev(cattle.end(), 2)->get_name() << std::endl;
     std::cout << "The last cow is " << (cattle.end() - 1)->get_name() << std::endl;
-	
+    
     std::cout << std::endl << std::endl;
     return (0);
 }

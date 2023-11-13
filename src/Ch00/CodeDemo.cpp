@@ -15,7 +15,7 @@ int main(){
     result = num_1 + num_2;
     
     std::cout << "The result of the addition is " << result << std::endl;
-	
+    
     std::cout << std::endl << std::endl;
     return (0);
 }

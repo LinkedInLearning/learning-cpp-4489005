@@ -21,7 +21,7 @@ int main(){
         outFile.close();
         std::cout << "File written successfully!" << std::endl;
     }
-	
+    
     std::cout << std::endl << std::endl;
     return (0);
 }
