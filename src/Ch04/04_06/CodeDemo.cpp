@@ -40,6 +40,7 @@ int main(){
 			default:  num_grd = 0.0f;
 				break;
 			};
+			
 			int j=0;
 			while (j < courses.size()  &&  courses[j].get_id() != grd.get_course_id())
 				j++;
