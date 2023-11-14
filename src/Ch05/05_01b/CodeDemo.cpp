@@ -29,16 +29,16 @@ int main(){
         if (grd.get_student_id() == id){
             float num_grd;          // float for the numeric grade
             switch (grd.get_grade()){
-            case 'A': num_grd = 4.0f;
-                break;
-            case 'B': num_grd = 3.0f;
-                break;
-            case 'C': num_grd = 2.0f;
-                break;
-            case 'D': num_grd = 1.0f;
-                break;
-            default:  num_grd = 0.0f;
-                break;
+                case 'A': num_grd = 4.0f;
+                    break;
+                case 'B': num_grd = 3.0f;
+                    break;
+                case 'C': num_grd = 2.0f;
+                    break;
+                case 'D': num_grd = 1.0f;
+                    break;
+                default:  num_grd = 0.0f;
+                    break;
             };
             
             int j = 0;
