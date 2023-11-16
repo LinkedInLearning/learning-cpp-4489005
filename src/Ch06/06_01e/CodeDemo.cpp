@@ -19,7 +19,7 @@ int main(){
         while (!inFile.eof()){
             getline(inFile, str);
             std::cout << str << ", ";
-            getline(inFile,str);
+            getline(inFile, str);
             number = stoi(str);
             std::cout << number << ", ";
             getline(inFile, str);
