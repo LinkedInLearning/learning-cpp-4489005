@@ -1,34 +1,22 @@
 # Learning C++
 This is the repository for the LinkedIn Learning course `Learning C++`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+![lil-thumbnail-url]
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+C++ is one of the most powerful and widely used programming languages of all time. It is also one of the oldest programming languages in use today. In this course, learn the basic elements of this object-oriented programming language that moves the world. Instructor Eduardo Corpeño begins with setting up the development environment and introducing the basic elements of object-oriented programming. Eduardo covers data types such as variables, expressions, assignments, constants, and more. He explains structures, classes, pointers, vectors, and so on. After stepping through the control flow process and a variety of useful functions, Eduardo finishes up with detailed information on opening and working with files.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+### Instructor
+Eduardo Corpeño
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+Electrical Engineer, Computer Programmer, and Teacher for 15+ years
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+Check out my other courses on [LinkedIn Learning][URL-instructor-home].
+
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
-
+[lil-course-url]: linkedin.com/learning/learning-c-plus-plus-22993675
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQFFyyr75fh80g/learning-public-crop_675_1200/0/1706572609334?e=2147483647&v=beta&t=t4H1o0GeD2gRSCzJQKxKr0xlvqs5F_z_S77joNmc6Xk
+[URL-instructor-home]: https://www.linkedin.com/learning/instructors/eduardo-corpeno
