@@ -1,7 +1,7 @@
 // Learning C++ 
 // Exercise 00_03
 // Using the exercise files on GitHub, by Eduardo Corpeño 
-
+// Hello world
 #include <iostream>
 
 int main(){

@@ -20,7 +20,7 @@
   "window.commandCenter": false,
   "screencastMode.onlyKeyboardShortcuts": true,
   "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Visual Studio Dark - C++",
   "workbench.fontAliasing": "antialiased",
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "workbench.statusBar.visible": true,
