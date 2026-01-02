@@ -17,5 +17,5 @@ int main(){
     std::cout << "The result of the addition is " << result << std::endl;
     
     std::cout << std::endl << std::endl;
-    return (0);
+    return (0); // my comment
 }
